@@ -1,28 +1,28 @@
 # My Development Workstation & Hardware Architecture
 
-Este repositorio documenta las especificaciones técnicas de mi estación de trabajo, diseñada para soportar flujos de trabajo intensivos en **Desarrollo Full Stack (NestJS/TypeScript)** y **entrenamiento/ejecución de modelos de IA locales**.
+This repository documents the technical specifications of my custom-built workstation, designed to handle intensive workflows in **Full Stack Development (NestJS/TypeScript)** and the **execution/training of local AI models**.
 
 ## 🛠️ Build Specifications
-He ensamblado y optimizado este equipo personalmente, logrando un equilibrio entre potencia de procesamiento multihilo, capacidad de memoria masiva y una gestión térmica eficiente.
+I personally assembled and optimized this rig, achieving a balance between multi-threaded processing power, massive memory capacity, and efficient thermal management.
 
-### Componentes Principales:
-* **Procesador (CPU):** **AMD Ryzen 7 5700G** (8 núcleos / 16 hilos). 
-    * *Justificación:* Ideal para paralelizar tareas, correr múltiples microservicios y contenedores de Docker simultáneamente sin degradación de performance.
-* **Memoria RAM:** **48GB DDR4**.
-    * *Justificación:* Capacidad extendida para entornos de desarrollo complejos que requieren múltiples instancias de VS Code, navegadores con cientos de pestañas y bases de datos locales pesadas.
-* **Gráficos (GPU):** **Sapphire AMD Radeon RX 6700 XT (12GB VRAM)**.
-    * *Justificación:* Los 12GB de memoria de video permiten cargar y testear modelos de lenguaje (LLMs) y Stable Diffusion de forma local para prototipado rápido.
-* **Almacenamiento (Arquitectura de 3 niveles):**
-    1.  **NVMe M.2 (1TB):** Unidad principal para el SO y proyectos activos (máxima velocidad de lectura/escritura).
-    2.  **SSD SATA (1TB):** Almacenamiento de alta velocidad para librerías y dependencias (node_modules, docker images).
-    3.  **HDD (512GB):** Backup local y archivos estáticos.
-* **Refrigeración:** Sistema de refrigeración por aire + flujo de aire optimizado con **6 ventiladores** y sistema de control unificado.
-    * *Justificación:* Estabilidad térmica garantizada bajo cargas de trabajo del 100% (compilación masiva o renderizado).
+### Core Components:
+* **Processor (CPU):** **AMD Ryzen 7 5700G** (8 Cores / 16 Threads). 
+    * *Rationale:* Ideal for parallelizing tasks, running multiple microservices, and Docker containers simultaneously without performance degradation.
+* **RAM:** **48GB DDR4**.
+    * *Rationale:* Extended capacity for complex development environments requiring multiple VS Code instances, memory-heavy browsers, and demanding local databases.
+* **Graphics (GPU):** **Sapphire AMD Radeon RX 6700 XT (12GB VRAM)**.
+    * *Rationale:* The 12GB of VRAM allows for loading and testing Large Language Models (LLMs) and Stable Diffusion locally for rapid prototyping.
+* **Storage (3-Tier Architecture):**
+    1.  **NVMe M.2 (1TB):** Main drive for OS and active projects (maximum read/write speeds).
+    2.  **SSD SATA (1TB):** High-speed storage for libraries and dependencies (node_modules, docker images).
+    3.  **HDD (512GB):** Local backup and static assets.
+* **Cooling:** Air cooling system + optimized airflow with a **6-fan setup** and unified control system.
+    * *Rationale:* Guaranteed thermal stability under 100% workloads (massive compilation or rendering).
 
-## 🖥️ Hardware Skills Demostrados
-- **Montaje Integral:** Ensamblaje de hardware de alta gama y gestión de cableado.
-- **Optimización Térmica:** Configuración de curvas de ventilación y presión de aire positiva en el gabinete.
-- **Mantenimiento:** Diagnóstico de hardware, actualización de BIOS y mantenimiento preventivo periódico.
+## 🖥️ Demonstrated Hardware Skills
+- **Full Assembly:** High-end hardware assembly and cable management.
+- **Thermal Optimization:** Fan curve configuration and positive pressure airflow management.
+- **Maintenance:** Hardware diagnostics, BIOS updates, and periodic preventive maintenance.
 
-## 💡 Filosofía Técnica
-Entender la arquitectura del hardware (como la latencia de un NVMe o la gestión de hilos de un Ryzen 7) me permite escribir código más eficiente, optimizando el uso de recursos y mejorando la calidad final del software desarrollado.
+## 💡 Technical Philosophy
+Understanding hardware architecture (such as NVMe latency or Ryzen 7 thread management) allows me to write more efficient code, optimizing resource usage and improving the overall quality of the software I develop.
